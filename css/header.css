@@ -1,0 +1,279 @@
+@charset "UTF-8";
+
+/* HEADER SETTING */
+#new_hd {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    z-index: 99;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+#new_hd.nav_active {
+    height: 315px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+}
+
+#new_hd.scroll_active {
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+}
+
+#new_hd .hd_area {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#new_hd .hd_con {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#new_hd .hd_container {
+    width: 100%;
+    height: 100px;
+    position: relative;
+    padding: 0 50px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+#new_hd .hd_container::after {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: #efefef;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    z-index: 999;
+}
+
+/* HEADER SETTING END */
+
+/* HEADER LOGO */
+#new_hd .logo_item {
+    width: 260px;
+    height: 30px;
+    position: relative;
+}
+
+#new_hd .logo_item > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/hd_logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+#new_hd.nav_active .logo_item > a,
+#new_hd.scroll_active .logo_item > a {
+    background-image: url(../img/hd_logo_on.png);
+}
+
+/* HEADER LOGO END */
+
+/* HEADER NAV */
+#new_hd .hd_nav {
+    width: auto;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+#new_hd .nav_menu_box {
+    width: auto;
+    height: auto;
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 50px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+#new_hd.nav_active .nav_menu_box {
+    gap: 100px;
+}
+
+#new_hd .nav_menu_box .menu_item {
+    width: auto;
+    height: auto;
+    position: relative;
+}
+
+#new_hd .nav_menu_box .menu_item > a {
+    font-size: 1.375rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+#new_hd.nav_active .nav_menu_box .menu_item > a,
+#new_hd.scroll_active .nav_menu_box .menu_item > a {
+    color: #000;
+}
+
+#new_hd .nav_menu_box .menu_item:hover > a {
+    color: #6343f5;
+}
+
+#new_hd .nav_menu_box .menu_item .deps_box {
+    width: 175px;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    top: 90px;
+    text-align: center;
+    display: none;
+}
+
+#new_hd .nav_menu_box .menu_item .deps_box .deps_item {
+    width: auto;
+    height: auto;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+#new_hd .nav_menu_box .menu_item .deps_box .deps_item:last-of-type {
+    margin-bottom: 0;
+}
+
+#new_hd .nav_menu_box .menu_item .deps_box .deps_item > a {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #808080;
+}
+
+#new_hd .nav_menu_box .menu_item:hover .deps_box .deps_item > a:hover {
+    color: #6343f5;
+}
+
+/* HEADER NAV END */
+
+/* HEADER LANG */
+#new_hd .lang_nav {
+    width: auto;
+    height: auto;
+    position: relative;
+}
+
+#new_hd .lang_nav .lang_nav_box {
+    width: auto;
+    height: auto;
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 40px;
+}
+
+#new_hd .lang_nav .lang_nav_box .lang_item {
+    width: auto;
+    height: auto;
+    position: relative;
+}
+
+#new_hd .lang_nav .lang_nav_box .lang_item::after {
+    content: '';
+    width: 1px;
+    height: 11px;
+    background-color: #e3e0e4;
+    position: absolute;
+    top: 7px;
+    right: -20px;
+}
+
+#new_hd .lang_nav .lang_nav_box .lang_item:last-of-type::after {
+    content: none;
+}
+
+#new_hd .lang_nav .lang_nav_box .lang_item > a {
+    font-size: 0.9375rem;
+    font-weight: 400;
+    color: #fff;
+    position: relative;
+}
+
+#new_hd.nav_active .lang_nav .lang_nav_box .lang_item > a,
+#new_hd.scroll_active .lang_nav .lang_nav_box .lang_item > a {
+    color: #000;
+}
+
+#new_hd .lang_nav .lang_nav_box .lang_item > a::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    -webkit-transition: width 0.3s ease-in-out;
+    -o-transition: width 0.3s ease-in-out;
+    -moz-transition: width 0.3s ease-in-out;
+    transition: width 0.3s ease-in-out;
+}
+
+#new_hd.nav_active .lang_nav .lang_nav_box .lang_item > a::after {
+    background-color: #000;
+}
+
+#new_hd .lang_nav .lang_nav_box .lang_item > a:hover::after,
+#new_hd .lang_nav .lang_nav_box .lang_item.lang_active > a::after {
+    width: 100%;
+}
+
+/* HEADER LANG END */

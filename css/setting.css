@@ -1,0 +1,169 @@
+@charset "UTF-8";
+
+:root {
+    --black: #181818;
+    --gray: #545454;
+    --litegray: #cecece;
+    --litegray2: #818181;
+    --litegray3: #eaeaea;
+    --white: #fff;
+    --blue: #246eb8;
+    --red: #d33a2a;
+    --purple: #9d3fe7;
+    --green: #226b5f;
+    --yellow: #f7b32b;
+    --orange: #ff9600;
+}
+
+.hiddentag {
+    overflow: hidden;
+    position: absolute;
+    border: 0;
+    width: 1px;
+    height: 1px;
+    clip: rect(0 0 0 0);
+}
+
+/* INPUT */
+/* INPUT END */
+
+/* FILE */
+/* FILE EMD */
+
+/* BUTTON */
+/* BUTTON END */
+
+/* SELECT */
+/* SELECT END */
+
+/* CHECKBOX */
+/* CHECKBOX END */
+
+/* RADIOBOX */
+/* RADIOBOX END */
+
+/* TEXTAREA */
+/* TEXTAREA END */
+
+/* PAGING BOX */
+.paging_con {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-top: 20px;
+}
+
+.paging_con .paging_box {
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.paging_con .paging_box .paging_arrows {
+    width: 28px;
+    height: 28px;
+    position: relative;
+}
+
+.paging_con .paging_box .paging_arrows > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: auto auto;
+    background-size: auto;
+    border: 1px solid #eee;
+}
+
+.paging_con .paging_box .paging_arrows_lt > a {
+    background-image: url(../img/paging_arrows_lt.png);
+}
+
+.paging_con .paging_box .paging_arrows_gt > a {
+    background-image: url(../img/paging_arrows_gt.png);
+}
+
+.paging_con .paging_box .paging_arrows > a:hover {
+    background-color: #f40;
+}
+
+.paging_con .paging_box .paging_arrows_lt > a:hover {
+    background-image: url(../img/paging_arrows_lt_on.png);
+}
+
+.paging_con .paging_box .paging_arrows_gt > a:hover {
+    background-image: url(../img/paging_arrows_gt_on.png);
+}
+
+.paging_con .paging_box .paging_number {
+    width: auto;
+    height: auto;
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.paging_con .paging_box .paging_number > li {
+    width: 28px;
+    height: 28px;
+    position: relative;
+    margin: 0 5px;
+}
+
+.paging_con .paging_box .paging_number > li > a {
+    width: 100%;
+    height: 100%;
+    font-size: 0.875rem;
+    font-weight: 600;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #000;
+    border: 1px solid #eee;
+}
+
+.paging_con .paging_box .paging_number > li > a:hover,
+.paging_con .paging_box .paging_number > li.active > a {
+    background-color: #f40;
+    color: #fff;
+}
+
+/* PAGING BOX END */
