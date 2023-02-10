@@ -6,7 +6,7 @@
     height: auto;
     position: relative;
     background-color: #181818;
-    border-bottom: 1px solid #3a3a3a;
+    border-top: 1px solid #3a3a3a;
 }
 
 #new_ft .ft_area {
@@ -42,6 +42,13 @@
     -moz-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+}
+
+@media all and (max-width: 1281px) {
+    #new_ft .ft_container {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
 }
 
 /* FOOTER END */
@@ -82,10 +89,10 @@
     background-repeat: no-repeat;
     -webkit-background-size: contain;
     background-size: contain;
-    -webkit-transition: all .3s ease-in-out;
-    -o-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 #new_ft .ft_logo > a:hover {
@@ -157,6 +164,10 @@
     position: relative;
 }
 
+#new_ft .ft_terms2 {
+    display: none;
+}
+
 #new_ft .ft_terms .ft_terms_box {
     width: auto;
     height: auto;
@@ -198,15 +209,106 @@
     font-size: 0.875rem;
     font-weight: 400;
     color: #fff;
-    -webkit-transition: all .3s ease-in-out;
-    -o-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 #new_ft .ft_terms .ft_terms_box > li > a:hover {
     background-color: #6343f5;
     padding: 0 10px;
+}
+
+@media all and (max-width: 1025px) {
+    #new_ft .ft_lt {
+        width: 100%;
+        display: block;
+    }
+
+    #new_ft .ft_logo {
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    #new_ft .ft_terms {
+        display: none;
+    }
+
+    #new_ft .ft_terms2 {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    #new_ft .ft_terms .ft_terms_box {
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -moz-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    #new_ft .ft_stat .ft_stat_box > li,
+    #new_ft .ft_stat .ft_stat_box > li > span {
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -moz-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+}
+
+@media all and (max-width: 481px) {
+    #new_ft .ft_container {
+        padding: 40px 15px;
+    }
+
+    #new_ft .ft_logo {
+        width: 180px;
+        margin: 0 0 20px 0;
+    }
+
+    #new_ft .ft_terms .ft_terms_box {
+        -webkit-box-pack: left;
+        -webkit-justify-content: left;
+        -moz-box-pack: left;
+        -ms-flex-pack: left;
+        justify-content: left;
+    }
+
+    #new_ft .ft_terms .ft_terms_box > li::before {
+        top: 2px;
+    }
+
+    #new_ft .ft_terms .ft_terms_box > li > a {
+        font-size: 0.8125rem;
+    }
+
+    #new_ft .ft_stat .ft_stat_box > li,
+    #new_ft .ft_stat .ft_stat_box > li > span {
+        display: inline-block;
+        font-size: 0.8125rem;
+    }
+
+    #new_ft .ft_stat .ft_stat_box > li > span {
+        margin-right: 20px;
+    }
+
+    #new_ft .ft_stat .ft_stat_box > li > span::before {
+        content: none;
+    }
+}
+
+@media all and (max-width: 376px) {
+    #new_ft .ft_terms .ft_terms_box > li > a {
+        font-size: 0.75rem;
+    }
+
+    #new_ft .ft_stat .ft_stat_box > li,
+    #new_ft .ft_stat .ft_stat_box > li > span {
+        font-size: 0.75rem;
+        word-break: keep-all;
+    }
 }
 
 /* FOOTER TERMS END */
