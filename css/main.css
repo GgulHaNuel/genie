@@ -586,6 +586,7 @@
     letter-spacing: -1px;
     position: relative;
     z-index: 1;
+    word-break: keep-all;
 }
 
 .more_btn_box {
