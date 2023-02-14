@@ -32,6 +32,10 @@
     background-image: url(../img/sub_bg_02.png);
 }
 
+#mission_bg {
+    background-image: url(../img/sub_bg_03.png);
+}
+
 #sub_tit .subtit_container {
     width: 100%;
     height: 100%;
@@ -787,6 +791,12 @@
 /* 01. ABOUT US END */
 
 /* 02. COMPANY HISTORY */
+#companyhis {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
 #companyhis .his_con {
     width: 100%;
     height: auto;
@@ -1120,3 +1130,195 @@
 }
 
 /* 02. COMPANY HISTORY END */
+
+/* 03. MISSION VISION */
+#mission {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+#mission .mission_con {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+#mission .mission_con .mission_tit {
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 90px;
+}
+
+#mission .mission_con .mission_tit > h2,
+#mission .mission_con .mission_tit > h2 > span {
+    font-size: 3.4375rem;
+    font-weight: 100;
+    color: #fff;
+    position: relative;
+}
+
+#mission .mission_con .mission_tit > h2::after {
+    content: '';
+    width: 42px;
+    height: 42px;
+    position: absolute;
+    top: 11px;
+    background-color: #8e3580;
+    border-radius: 5rem;
+    left: -60px;
+    z-index: -1;
+}
+
+#mission .mission_con .mission_tit > h2 > span {
+    font-weight: 700;
+    color: #6343f5;
+}
+
+#mission .mission_con .muission_subtit {
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-bottom: 110px;
+}
+
+#mission .mission_con .muission_subtit > h3 {
+    font-size: 3.4375rem;
+    font-weight: 700;
+    color: #fff;
+    position: relative;
+}
+
+#mission .mission_con .muission_subtit > h3::after {
+    content: '';
+    width: 98px;
+    height: 98px;
+    background-color: #322c4f;
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    border-radius: 5rem;
+    z-index: -1;
+}
+
+#mission .mission_con .mission_list {
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+#mission .mission_con .mission_list_box {
+    width: auto;
+    height: auto;
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+#mission .mission_con .mission_list_box > li {
+    width: 304px;
+    height: 304px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 100rem;
+    margin: 0 -15px;
+}
+
+#mission .mission_con .mission_list_box > li .mission_txt {
+    width: auto;
+    height: auto;
+    position: relative;
+    text-align: center;
+}
+
+#mission .mission_con .mission_list_box > li .mission_txt > h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #6343f5;
+    margin-bottom: 35px;
+}
+
+#mission .mission_con .mission_list_box > li .mission_txt > p {
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: #fff;
+    line-height: 27px;
+}
+
+@media all and (max-width: 1920px) {
+    #mission .mission_con .mission_tit > h2::after {
+        width: 2.3vw;
+        height: 2.3vw;
+    }
+
+    #mission .mission_con .muission_subtit > h3::after {
+        width: 5.2vw;
+        height: 5.2vw;
+    }
+}
+
+/* 03. MISSION VISION END */
