@@ -340,7 +340,8 @@
     transition: width 0.3s ease-in-out;
 }
 
-#new_hd.nav_active .lang_nav .lang_nav_box .lang_item > a::after {
+#new_hd.nav_active .lang_nav .lang_nav_box .lang_item > a::after,
+#new_hd.scroll_active .lang_nav .lang_nav_box .lang_item > a::after {
     background-color: #000;
 }
 
