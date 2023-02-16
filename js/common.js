@@ -31,8 +31,9 @@ $(function () {
     function MAINSLIDER() {
         const arrowprev = $('.arrows_prev');
         const arrownext = $('.arrows_next');
-        $('.slider_box').slick({
-            infinite: true,
+
+        let MAINSLIDER = $('.slider_box').slick({
+            // infinite: true,
             slidesToShow: 1,
             slidesToScroll: 1,
             autoplay: true,
@@ -45,25 +46,80 @@ $(function () {
             prevArrow: arrowprev,
             nextArrow: arrownext,
         });
+
+        $('.arrows_prev').addClass("arrows_active");
+
+        MAINSLIDER.on('afterChange', function (event, slick, currentSlide) {
+            console.log(currentSlide);
+            if (currentSlide === 0) {
+                $('.arrows_prev').addClass("arrows_active");
+                $('.arrows_next').removeClass("arrows_active");
+            } else {
+                $('.arrows_prev').removeClass("arrows_active");
+            }
+
+            if (slick.slideCount === currentSlide + 1) {
+                $('.arrows_next').addClass("arrows_active");
+            } else {
+                $('.arrows_next').removeClass("arrows_active");
+            }
+        });
     }
     MAINSLIDER();
+
+    function VIEWSLIDER() {
+        const arrowprev2 = $('.viewarrows_prev');
+        const arrownext2 = $('.viewarrows_next');
+
+        let VIEWSLIDER = $('.viewslider_box').slick({
+            // infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 5000,
+            speed: 500,
+            fade: true,
+            dots: true,
+            cssEase: 'linear',
+            pauseOnHover: false,
+            prevArrow: arrowprev2,
+            nextArrow: arrownext2,
+        });
+
+        $('.viewarrows_prev').addClass("arrows_active");
+
+        VIEWSLIDER.on('afterChange', function (event, slick2, currentSlide2) {
+            console.log(currentSlide2);
+            if (currentSlide2 === 0) {
+                $('.viewarrows_prev').addClass("arrows_active");
+                $('.viewarrows_next').removeClass("arrows_active");
+            } else {
+                $('.viewarrows_prev').removeClass("arrows_active");
+            }
+
+            if (slick2.slideCount === currentSlide2 + 1) {
+                $('.viewarrows_next').addClass("arrows_active");
+            } else {
+                $('.viewarrows_next').removeClass("arrows_active");
+            }
+        });
+    }
+    VIEWSLIDER();
 
     function MONAV() {
         $('.bars_btn').click(function () {
             $('.mo_nav_wrap').addClass('mo_nav_active');
-            $(".mo_bg").fadeIn(300);
+            $('.mo_bg').fadeIn(300);
         });
 
-        $(".bars_close").click(function() {
+        $('.bars_close').click(function () {
             $('.mo_nav_wrap').removeClass('mo_nav_active');
-            $(".mo_bg").fadeOut(300);
+            $('.mo_bg').fadeOut(300);
         });
 
         $('.mo_menu_ob').click(function () {
-            //slide up all the link lists
             $('.mo_deps_box').slideUp();
             $('.mo_menu_ob > a > span').removeClass('arrows_active');
-            //slide down the link list below the h3 clicked - only if its closed
             if (!$(this).next().is(':visible')) {
                 $(this).next().slideDown();
                 $(this).find('span').addClass('arrows_active');
@@ -78,7 +134,6 @@ $(function () {
         clearTimeout(resizeTimerInternal);
 
         resizeTimerInternal = setTimeout(function () {
-            //add functions here to fire on resize
             slickSliderWithResize();
         }, 100);
     });
@@ -86,7 +141,6 @@ $(function () {
     function slickSliderWithResize() {
         if ($(window).width() < 885) {
             if ($('.works_list').hasClass('slick-initialized')) {
-
             } else {
                 $('.works_list').slick({
                     autoplay: true,
@@ -106,17 +160,16 @@ $(function () {
                             breakpoint: 481,
                             settings: {
                                 slidesToShow: 1,
-                            }
-                        }
-                    ]
+                            },
+                        },
+                    ],
                 });
             }
         } else {
             if ($('.works_list').hasClass('slick-initialized')) {
-                $('.works_list').slick("unslick");
+                $('.works_list').slick('unslick');
             }
         }
     }
     slickSliderWithResize();
-
 });
