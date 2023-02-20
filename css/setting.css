@@ -24,6 +24,10 @@
     clip: rect(0 0 0 0);
 }
 
+/* .scrollani {
+    opacity: 0;
+} */
+
 /* INPUT */
 /* INPUT END */
 
@@ -83,6 +87,66 @@
     border: 1px solid #6343f5;
 }
 
+.work_view_btn {
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.work_view_btn > li {
+    width: auto;
+    height: auto;
+    position: relative;
+}
+
+.work_view_btn > li > a {
+    display: block;
+    width: auto;
+    height: auto;
+    font-size: 1.4375rem;
+    font-weight: 500;
+    color: #fff;
+    background-color: #6343f5;
+    border-radius: 5rem;
+    padding: 10px 35px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.work_view_btn > li > a:hover {
+    background-color: #fff;
+    color: #212121;
+}
+
+@media all and (max-wdith: 1025px) {
+    .work_view_btn > li > a {
+        font-size: 1.25rem;
+    }
+}
+
+@media all and (max-wdith: 885px) {
+    .work_view_btn > li > a {
+        font-size: 1.125rem;
+    }
+}
+
 @media all and (max-width: 481px) {
     .more_btn > button {
         font-size: 0.8125rem;
@@ -91,6 +155,17 @@
 
     .more_btn > button > span {
         display: none;
+    }
+
+    .work_view_btn > li > a {
+        font-size: 1rem;
+        padding: 8px 30px;
+    }
+}
+
+@media all and (max-width: 321px) {
+    .work_view_btn > li > a {
+        font-size: 0.875rem;
     }
 }
 
@@ -113,7 +188,7 @@
     width: 100%;
     height: auto;
     position: relative;
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
 .paging_con .paging_box {
@@ -138,8 +213,8 @@
 }
 
 .paging_con .paging_box .paging_arrows {
-    width: 28px;
-    height: 28px;
+    width: 40px;
+    height: 40px;
     position: relative;
 }
 
@@ -147,33 +222,34 @@
     display: block;
     width: 100%;
     height: 100%;
-    background-color: #fff;
     background-position: center;
     background-repeat: no-repeat;
     -webkit-background-size: auto auto;
     background-size: auto;
-    border: 1px solid #eee;
+    border: 1px solid #cacaca;
+    border-radius: 5rem;
 }
 
 .paging_con .paging_box .paging_arrows_lt > a {
-    background-image: url(../img/paging_arrows_lt.png);
+    background-image: url(../img/paging_arrows_prev.png);
 }
 
 .paging_con .paging_box .paging_arrows_gt > a {
-    background-image: url(../img/paging_arrows_gt.png);
+    background-image: url(../img/paging_arrows_next.png);
 }
 
 .paging_con .paging_box .paging_arrows > a:hover {
-    background-color: #f40;
+    background-color: #6343f5;
+    border-color: #6343f5;
 }
 
-.paging_con .paging_box .paging_arrows_lt > a:hover {
+/* .paging_con .paging_box .paging_arrows_lt > a:hover {
     background-image: url(../img/paging_arrows_lt_on.png);
 }
 
 .paging_con .paging_box .paging_arrows_gt > a:hover {
     background-image: url(../img/paging_arrows_gt_on.png);
-}
+} */
 
 .paging_con .paging_box .paging_number {
     width: auto;
@@ -193,8 +269,8 @@
 }
 
 .paging_con .paging_box .paging_number > li {
-    width: 28px;
-    height: 28px;
+    width: 40px;
+    height: 40px;
     position: relative;
     margin: 0 5px;
 }
@@ -202,7 +278,7 @@
 .paging_con .paging_box .paging_number > li > a {
     width: 100%;
     height: 100%;
-    font-size: 0.875rem;
+    font-size: 0.9375rem;
     font-weight: 600;
     display: -webkit-box;
     display: -webkit-flex;
@@ -219,14 +295,63 @@
     -moz-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    color: #000;
-    border: 1px solid #eee;
+    border-radius: 5rem;
+    color: #fff;
 }
 
 .paging_con .paging_box .paging_number > li > a:hover,
 .paging_con .paging_box .paging_number > li.active > a {
-    background-color: #f40;
+    background-color: #6343f5;
     color: #fff;
+}
+
+@media all and (max-width: 481px) {
+    .paging_con {
+        margin-top: 30px;
+    }
+
+    .paging_con .paging_box .paging_arrows,
+    .paging_con .paging_box .paging_number > li {
+        width: 35px;
+        height: 35px;
+    }
+
+    .paging_con .paging_box .paging_number > li > a {
+        font-size: 0.8125rem;
+    }
+}
+
+@media all and (max-width: 376px) {
+    .paging_con .paging_box .paging_arrows,
+    .paging_con .paging_box .paging_number > li {
+        width: 30px;
+        height: 30px;
+    }
+
+    .paging_con .paging_box .paging_arrows > a {
+        -webkit-background-size: 5px 5px;
+        background-size: 5px;
+    }
+
+    .paging_con .paging_box .paging_number > li {
+        margin: 0 2.5px;
+    }
+
+    .paging_con .paging_box .paging_number > li > a {
+        font-size: 0.6875rem;
+    }
+}
+
+@media all and (max-width: 321px) {
+    .paging_con {
+        margin-top: 29px;
+    }
+
+    .paging_con .paging_box .paging_arrows,
+    .paging_con .paging_box .paging_number > li {
+        width: 25px;
+        height: 25px;
+    }
 }
 
 /* PAGING BOX END */

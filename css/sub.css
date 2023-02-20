@@ -48,6 +48,10 @@
     background-image: url(../img/sub_bg_02a.png);
 }
 
+#careers_bg {
+    background-image: url(../img/sub_bg_03a.png);
+}
+
 #sub_tit .subtit_container {
     width: 100%;
     height: 100%;
@@ -298,6 +302,14 @@
 }
 
 @media all and (max-width: 321px) {
+    #sub_tit {
+        height: 160px;
+    }
+
+    #sub_tit .subtit_area {
+        padding-top: 55px;
+    }
+
     #sub_tit .subtit_container .cate_txt .cate_txt_box > p {
         font-size: 0.8125rem;
     }
@@ -2020,3 +2032,473 @@
 }
 
 /* 05. CONTACT END */
+
+/* 06. IDEAL TALENTS */
+#ideal {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+#ideal .ideal_con {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+#ideal .ideal_con .ideal_cont_con {
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+#ideal .ideal_con .ideal_cont_con .ideal_cont_box {
+    width: 777px;
+    height: 596px;
+    position: relative;
+    background-image: url(../img/ideal_img_01.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: contain;
+    background-size: contain;
+    position: relative;
+}
+
+#ideal .ideal_con .ideal_cont_con .ideal_cont_box > li {
+    width: 220px;
+    height: auto;
+    position: absolute;
+    font-weight: 300;
+}
+
+#ideal .ideal_con .ideal_cont_con .ideal_cont_box > li,
+#ideal .ideal_con .ideal_cont_con .ideal_cont_box > li > span {
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+#ideal .ideal_con .ideal_cont_con .ideal_cont_box > li > span {
+    font-weight: 700;
+}
+
+#ideal .ideal_con .ideal_cont_con .ideal_cont_box > li.ideal_lttop {
+    left: -30px;
+    top: 40px;
+    text-align: right;
+}
+
+#ideal .ideal_con .ideal_cont_con .ideal_cont_box > li.ideal_gttop {
+    right: -30px;
+    top: 40px;
+    text-align: left;
+}
+
+#ideal .ideal_con .ideal_cont_con .ideal_cont_box > li.ideal_ltbottom {
+    left: -30px;
+    bottom: 100px;
+    text-align: right;
+}
+
+#ideal .ideal_con .ideal_cont_con .ideal_cont_box > li.ideal_gtbottom {
+    right: -30px;
+    bottom: 100px;
+    text-align: left;
+}
+
+#ideal .ideal_con .ideal_list_con {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-top: 170px;
+}
+
+#ideal .ideal_con .ideal_list_box {
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -moz-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+#ideal .ideal_con .ideal_list_box .ideal_item {
+    width: -webkit-calc(100% / 4);
+    width: -moz-calc(100% / 4);
+    width: calc(100% / 4);
+    height: auto;
+    position: relative;
+    text-align: center;
+}
+
+#ideal .ideal_con .ideal_list_box .ideal_item .ideal_icon {
+    width: 100%;
+    height: 130px;
+    position: relative;
+    font-size: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -moz-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+#ideal .ideal_con .ideal_list_box .ideal_item .ideal_icon > img {
+    width: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#ideal .ideal_con .ideal_list_box .ideal_item > h2 {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+#ideal .ideal_con .ideal_list_box .ideal_item > p {
+    font-size: 1.125rem;
+    font-weight: 300;
+    color: #c2c2c2;
+}
+
+@media all and (max-width: 1441px) {
+    #ideal .ideal_con .ideal_cont_con .ideal_cont_box {
+        width: 600px;
+        height: 466px;
+    }
+
+    #ideal .ideal_con .ideal_cont_con .ideal_cont_box > li,
+    #ideal .ideal_con .ideal_cont_con .ideal_cont_box > li > span {
+        font-size: 2.1875rem;
+    }
+
+    #ideal .ideal_con .ideal_cont_con .ideal_cont_box > li.ideal_lttop {
+        top: 30px;
+        left: -70px;
+    }
+
+    #ideal .ideal_con .ideal_cont_con .ideal_cont_box > li.ideal_gttop {
+        top: 30px;
+        right: -70px;
+    }
+
+    #ideal .ideal_con .ideal_cont_con .ideal_cont_box > li.ideal_ltbottom {
+        left: -70px;
+        bottom: 70px;
+    }
+
+    #ideal .ideal_con .ideal_cont_con .ideal_cont_box > li.ideal_gtbottom {
+        right: -70px;
+        bottom: 70px;
+    }
+
+    #ideal .ideal_con .ideal_list_con {
+        margin-top: 100px;
+    }
+
+    #ideal .ideal_con .ideal_list_box .ideal_item .ideal_icon {
+        height: 90px;
+        margin-bottom: 30px;
+    }
+
+    #ideal .ideal_con .ideal_list_box .ideal_item > h2 {
+        font-size: 1.5625rem;
+    }
+
+    #ideal .ideal_con .ideal_list_box .ideal_item > p {
+        font-size: 1rem;
+    }
+}
+
+@media all and (max-width: 1281px) {
+    #ideal .ideal_con .ideal_cont_con .ideal_cont_box {
+        width: 500px;
+        height: 466px;
+    }
+
+    #ideal .ideal_con .ideal_cont_con .ideal_cont_box > li,
+    #ideal .ideal_con .ideal_cont_con .ideal_cont_box > li > span {
+        font-size: 1.875rem;
+    }
+
+    #ideal .ideal_con .ideal_cont_con .ideal_cont_box > li.ideal_lttop {
+        top: 50px;
+        left: -100px;
+    }
+
+    #ideal .ideal_con .ideal_cont_con .ideal_cont_box > li.ideal_gttop {
+        top: 50px;
+        right: -100px;
+    }
+
+    #ideal .ideal_con .ideal_cont_con .ideal_cont_box > li.ideal_ltbottom {
+        left: -100px;
+        bottom: 90px;
+    }
+
+    #ideal .ideal_con .ideal_cont_con .ideal_cont_box > li.ideal_gtbottom {
+        right: -100px;
+        bottom: 90px;
+    }
+
+    #ideal .ideal_con .ideal_list_box .ideal_item > h2 {
+        font-size: 1.375rem;
+    }
+}
+
+@media all and (max-width: 1025px) {
+    #ideal .ideal_con .ideal_cont_con .ideal_cont_box {
+        width: 450px;
+        height: 360px;
+    }
+
+    #ideal .ideal_con .ideal_cont_con .ideal_cont_box > li {
+        width: 160px;
+    }
+
+    #ideal .ideal_con .ideal_cont_con .ideal_cont_box > li,
+    #ideal .ideal_con .ideal_cont_con .ideal_cont_box > li > span {
+        font-size: 1.5rem;
+    }
+
+    #ideal .ideal_con .ideal_cont_con .ideal_cont_box > li.ideal_lttop {
+        top: 40px;
+        left: -60px;
+    }
+
+    #ideal .ideal_con .ideal_cont_con .ideal_cont_box > li.ideal_gttop {
+        top: 40px;
+        right: -60px;
+    }
+
+    #ideal .ideal_con .ideal_cont_con .ideal_cont_box > li.ideal_ltbottom {
+        left: -60px;
+        bottom: 70px;
+    }
+
+    #ideal .ideal_con .ideal_cont_con .ideal_cont_box > li.ideal_gtbottom {
+        right: -60px;
+        bottom: 70px;
+    }
+
+    #ideal .ideal_con .ideal_list_box .ideal_item > h2 {
+        font-size: 1.25rem;
+    }
+}
+
+@media all and (max-width: 885px) {
+    #ideal .ideal_con .ideal_cont_con .ideal_cont_box {
+        width: 350px;
+        height: 280px;
+    }
+
+    #ideal .ideal_con .ideal_cont_con .ideal_cont_box > li, #ideal .ideal_con .ideal_cont_con .ideal_cont_box > li > span {
+        font-size: 1.4375rem;
+    }
+
+    #ideal .ideal_con .ideal_cont_con .ideal_cont_box > li.ideal_lttop {
+        top: 15px;
+        left: -80px;
+    }
+
+    #ideal .ideal_con .ideal_cont_con .ideal_cont_box > li.ideal_gttop {
+        top: 15px;
+        right: -80px;
+    }
+
+    #ideal .ideal_con .ideal_cont_con .ideal_cont_box > li.ideal_ltbottom {
+        left: -80px;
+        bottom: 40px;
+    }
+
+    #ideal .ideal_con .ideal_cont_con .ideal_cont_box > li.ideal_gtbottom {
+        right: -80px;
+        bottom: 40px;
+    }
+
+    #ideal .ideal_con .ideal_list_box {
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        gap: 50px 0;
+    }
+
+    #ideal .ideal_con .ideal_list_box .ideal_item {
+        width: -webkit-calc(100% / 2);
+        width: -moz-calc(100% / 2);
+        width: calc(100% / 2);
+    }
+
+    #ideal .ideal_con .ideal_list_box .ideal_item > p {
+        font-size: 0.9375rem;
+    }
+}
+
+@media all and (max-width: 481px) {
+    #ideal .ideal_con .ideal_cont_con .ideal_cont_box {
+        width: 220px;
+        height: 180px;
+    }
+
+    #ideal .ideal_con .ideal_cont_con .ideal_cont_box > li {
+        width: 120px;
+    }
+
+    #ideal .ideal_con .ideal_cont_con .ideal_cont_box > li, #ideal .ideal_con .ideal_cont_con .ideal_cont_box > li > span {
+        font-size: 1.25rem;
+    }
+
+    #ideal .ideal_con .ideal_cont_con .ideal_cont_box > li.ideal_lttop {
+        top: -5px;
+        left: -65px;
+    }
+
+    #ideal .ideal_con .ideal_cont_con .ideal_cont_box > li.ideal_gttop {
+        top: -5px;
+        right: -65px;
+    }
+
+    #ideal .ideal_con .ideal_cont_con .ideal_cont_box > li.ideal_ltbottom {
+        left: -65px;
+        bottom: 10px;
+    }
+
+    #ideal .ideal_con .ideal_cont_con .ideal_cont_box > li.ideal_gtbottom {
+        right: -65px;
+        bottom: 10px;
+    }
+
+    #ideal .ideal_con .ideal_list_box .ideal_item .ideal_icon {
+        height: 60px;
+        margin-bottom: 20px;
+    }
+
+    #ideal .ideal_con .ideal_list_box .ideal_item > h2 {
+        font-size: 1rem;
+    }
+
+    #ideal .ideal_con .ideal_list_box .ideal_item > p {
+        font-size: 0.875rem;
+    }
+}
+
+@media all and (max-width: 376px) {
+    #ideal .ideal_con .ideal_list_con {
+        margin-top: 50px;
+    }
+
+    #ideal .ideal_con .ideal_cont_con .ideal_cont_box > li, #ideal .ideal_con .ideal_cont_con .ideal_cont_box > li > span {
+        font-size: 1rem;
+    }
+
+    #ideal .ideal_con .ideal_cont_con .ideal_cont_box > li.ideal_lttop {
+        top: 5px;
+        left: -65px;
+    }
+
+    #ideal .ideal_con .ideal_cont_con .ideal_cont_box > li.ideal_gttop {
+        top: 5px;
+        right: -65px;
+    }
+
+    #ideal .ideal_con .ideal_cont_con .ideal_cont_box > li.ideal_ltbottom {
+        left: -65px;
+        bottom: 20px;
+    }
+
+    #ideal .ideal_con .ideal_cont_con .ideal_cont_box > li.ideal_gtbottom {
+        right: -65px;
+        bottom: 20px;
+    }
+
+    #ideal .ideal_con .ideal_list_box .ideal_item > h2 {
+        font-size: 0.9375rem;
+        margin-bottom: 10px;
+    }
+}
+
+@media all and (max-width: 321px) {
+    #ideal .ideal_con .ideal_cont_con .ideal_cont_box > li {
+        width: 100px;
+    }
+
+    #ideal .ideal_con .ideal_cont_con .ideal_cont_box > li, #ideal .ideal_con .ideal_cont_con .ideal_cont_box > li > span {
+        font-size: 0.9375rem;
+    }
+
+    #ideal .ideal_con .ideal_cont_con .ideal_cont_box > li.ideal_lttop {
+        top: 5px;
+        left: -45px;
+    }
+
+    #ideal .ideal_con .ideal_cont_con .ideal_cont_box > li.ideal_gttop {
+        top: 5px;
+        right: -45px;
+    }
+
+    #ideal .ideal_con .ideal_cont_con .ideal_cont_box > li.ideal_ltbottom {
+        left: -45px;
+        bottom: 20px;
+    }
+
+    #ideal .ideal_con .ideal_cont_con .ideal_cont_box > li.ideal_gtbottom {
+        right: -45px;
+        bottom: 20px;
+    }
+
+    #ideal .ideal_con .ideal_list_box {
+        gap: 30px 0;
+    }
+
+    #ideal .ideal_con .ideal_list_box .ideal_item .ideal_icon {
+        height: 50px;
+    }
+
+    #ideal .ideal_con .ideal_list_box .ideal_item > h2 {
+        font-size: 0.875rem;
+    }
+
+    #ideal .ideal_con .ideal_list_box .ideal_item > p {
+        font-size: 0.75rem;
+        word-break: keep-all;
+    }
+}
+
+/* 06. IDEAL TALENTS END */
