@@ -159,6 +159,7 @@
     height: auto;
     position: relative;
     text-align: center;
+    overflow: hidden;
 }
 
 #sub_tit .subtit_container .cate_txt .cate_txt_box > p {
@@ -877,7 +878,13 @@
     position: relative;
 }
 
-#companyhis .his_con .his_box .his_number > h2 {
+#companyhis .his_con .his_box .his_number .pin-spacer {
+    width: 100% !important;
+    height: auto !important;
+    padding: 0 !important;
+}
+
+#companyhis .his_con .his_box .his_number h2 {
     font-size: 5rem;
     font-weight: 600;
     color: #6343f5;
@@ -891,6 +898,7 @@
     width: calc((100% - 80px) - 210px);
     height: auto;
     position: relative;
+    overflow: hidden;
 }
 
 #companyhis .his_con .his_box .his_list > li {
@@ -986,7 +994,7 @@
         gap: 190px;
     }
 
-    #companyhis .his_con .his_box .his_number > h2 {
+    #companyhis .his_con .his_box .his_number h2 {
         font-size: 4.375rem;
     }
 
@@ -1004,7 +1012,7 @@
 }
 
 @media all and (max-width: 1281px) {
-    #companyhis .his_con .his_box .his_number > h2 {
+    #companyhis .his_con .his_box .his_number h2 {
         font-size: 4.125rem;
     }
 
@@ -1023,7 +1031,7 @@
         gap: 100px;
     }
 
-    #companyhis .his_con .his_box .his_number > h2 {
+    #companyhis .his_con .his_box .his_number h2 {
         font-size: 3.75rem;
     }
 
@@ -1046,7 +1054,7 @@
         gap: 70px;
     }
 
-    #companyhis .his_con .his_box .his_number > h2 {
+    #companyhis .his_con .his_box .his_number h2 {
         font-size: 3.625rem;
         line-height: 58px;
     }
@@ -1076,7 +1084,7 @@
         margin-bottom: 70px;
     }
 
-    #companyhis .his_con .his_box .his_number > h2 {
+    #companyhis .his_con .his_box .his_number h2 {
         font-size: 2.0625rem;
         line-height: normal;
     }
@@ -1114,7 +1122,7 @@
 }
 
 @media all and (max-width: 376px) {
-    #companyhis .his_con .his_box .his_number > h2 {
+    #companyhis .his_con .his_box .his_number h2 {
         font-size: 1.5625rem;
     }
 
@@ -1150,7 +1158,7 @@
 }
 
 @media all and (max-width: 321px) {
-    #companyhis .his_con .his_box .his_number > h2 {
+    #companyhis .his_con .his_box .his_number h2 {
         font-size: 1.25rem;
     }
 
@@ -2329,7 +2337,8 @@
         height: 280px;
     }
 
-    #ideal .ideal_con .ideal_cont_con .ideal_cont_box > li, #ideal .ideal_con .ideal_cont_con .ideal_cont_box > li > span {
+    #ideal .ideal_con .ideal_cont_con .ideal_cont_box > li,
+    #ideal .ideal_con .ideal_cont_con .ideal_cont_box > li > span {
         font-size: 1.4375rem;
     }
 
@@ -2381,7 +2390,8 @@
         width: 120px;
     }
 
-    #ideal .ideal_con .ideal_cont_con .ideal_cont_box > li, #ideal .ideal_con .ideal_cont_con .ideal_cont_box > li > span {
+    #ideal .ideal_con .ideal_cont_con .ideal_cont_box > li,
+    #ideal .ideal_con .ideal_cont_con .ideal_cont_box > li > span {
         font-size: 1.25rem;
     }
 
@@ -2424,7 +2434,8 @@
         margin-top: 50px;
     }
 
-    #ideal .ideal_con .ideal_cont_con .ideal_cont_box > li, #ideal .ideal_con .ideal_cont_con .ideal_cont_box > li > span {
+    #ideal .ideal_con .ideal_cont_con .ideal_cont_box > li,
+    #ideal .ideal_con .ideal_cont_con .ideal_cont_box > li > span {
         font-size: 1rem;
     }
 
@@ -2459,7 +2470,8 @@
         width: 100px;
     }
 
-    #ideal .ideal_con .ideal_cont_con .ideal_cont_box > li, #ideal .ideal_con .ideal_cont_con .ideal_cont_box > li > span {
+    #ideal .ideal_con .ideal_cont_con .ideal_cont_box > li,
+    #ideal .ideal_con .ideal_cont_con .ideal_cont_box > li > span {
         font-size: 0.9375rem;
     }
 

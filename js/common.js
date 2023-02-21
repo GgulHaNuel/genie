@@ -135,6 +135,7 @@ $(function () {
 
         resizeTimerInternal = setTimeout(function () {
             slickSliderWithResize();
+            ANIMEDEL();
         }, 100);
     });
 
@@ -172,4 +173,13 @@ $(function () {
         }
     }
     slickSliderWithResize();
+
+    function ANIMEDEL () {
+        if ($(window).width() < 885) {
+            $(".works_con .works_cont .works_list .works_item").removeClass("scrollani");
+        }else {
+            $(".works_con .works_cont .works_list .works_item").addClass("scrollani");
+        }
+    }
+    ANIMEDEL();
 });
