@@ -181,15 +181,17 @@
                     <div class="subtit_container">
                         <div class="cate_con">
                             <ul class="cate_box">
-                                <li class="cate_txt cate_home"><a href="../index.html"><span></span>HOME</a></li>
+                                <li class="cate_txt cate_home">
+                                    <a href="../index.html"><span></span>HOME</a>
+                                </li>
                                 <li class="cate_txt">ABOUT</li>
                                 <li class="cate_txt">COMPANY HISTORY</li>
                             </ul>
                         </div>
                         <div class="cate_txt">
                             <div class="cate_txt_box">
-                                <p>ABOUT</p>
-                                <h2>COMPANY HISTORY</h2>
+                                <p class="scroll-dlay">ABOUT</p>
+                                <h2 class="scroll-dlay">COMPANY HISTORY</h2>
                             </div>
                         </div>
                     </div>
@@ -205,34 +207,34 @@
                     <div id="companyhis" class="sub_con">
                         <div class="line"></div>
                         <div class="his_con">
-                            <div class="his_box">
-                                <div class="his_number"><h2>2022</h2></div>
+                            <div class="his_box his_box-01">
+                                <div class="his_number"><h2 class="scroll-pin">2022</h2></div>
                                 <ul class="his_list">
-                                    <li>
+                                    <li class="scrollgt">
                                         <div class="his_month"><h2>12</h2></div>
                                         <div class="his_txt">
                                             <p>OTT서비스 ㈜티빙 - ㈜시즌 흡수합병</p>
                                         </div>
                                     </li>
-                                    <li>
+                                    <li class="scrollgt">
                                         <div class="his_month"><h2>11</h2></div>
                                         <div class="his_txt">
                                             <p>MPP사업자 ㈜스카이라이프티브이 - ㈜미디어지니 흡수합병</p>
                                         </div>
                                     </li>
-                                    <li>
+                                    <li class="scrollgt">
                                         <div class="his_month"><h2>07</h2></div>
                                         <div class="his_txt">
                                             <p>㈜씨제이엔엠 투자유치</p>
                                         </div>
                                     </li>
-                                    <li>
+                                    <li class="scrollgt">
                                         <div class="his_month"><h2>05</h2></div>
                                         <div class="his_txt">
                                             <p>크리에이터 레이블 점보필름㈜ 지분 투자</p>
                                         </div>
                                     </li>
-                                    <li>
+                                    <li class="scrollgt">
                                         <div class="his_month"><h2>05</h2></div>
                                         <div class="his_txt">
                                             <p>제1회 KT스튜디오지니 시리즈공모전 개최</p>
@@ -240,43 +242,43 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="his_box">
-                                <div class="his_number"><h2>2021</h2></div>
+                            <div class="his_box his_box-02">
+                                <div class="his_number"><h2 class="scroll-pin2">2021</h2></div>
                                 <ul class="his_list">
-                                    <li>
+                                    <li class="scrollgt">
                                         <div class="his_month"><h2>11</h2></div>
                                         <div class="his_txt">
                                             <p>OTT서비스 ㈜케이티시즌 흡수합병</p>
                                         </div>
                                     </li>
-                                    <li>
+                                    <li class="scrollgt">
                                         <div class="his_month"><h2>11</h2></div>
                                         <div class="his_txt">
                                             <p>음악스트리밍 서비스 ㈜지니뮤직 편입</p>
                                         </div>
                                     </li>
-                                    <li>
+                                    <li class="scrollgt">
                                         <div class="his_month"><h2>11</h2></div>
                                         <div class="his_txt">
                                             <p>구독형 전자책플랫폼 서비스 ㈜밀리의서재 편입</p>
                                         </div>
                                     </li>
-                                    <li>
+                                    <li class="scrollgt">
                                         <div class="his_month"><h2>09</h2></div>
                                         <div class="his_txt">
                                             <p>MPP사업자 ㈜미디어지니 인수</p>
                                         </div>
                                     </li>
-                                    <li>
+                                    <li class="scrollgt">
                                         <div class="his_month"><h2>04</h2></div>
                                         <div class="his_txt">
                                             <p>
-                                                웹소설 · 웹툰 콘텐츠 사업자 ㈜스토리위즈 지분취득<br>
+                                                웹소설 · 웹툰 콘텐츠 사업자 ㈜스토리위즈 지분취득<br />
                                                 MPP사업자 ㈜스카이라이프티브이 지분취득
                                             </p>
                                         </div>
                                     </li>
-                                    <li>
+                                    <li class="scrollgt">
                                         <div class="his_month"><h2>01</h2></div>
                                         <div class="his_txt">
                                             <p>케이티스튜디오지니 설립</p>
@@ -334,4 +336,42 @@
     </body>
     <script src="../js/common.js"></script>
     <script src="../js/anim.js"></script>
+    <script>
+        $(function () {
+            var resizeTimerInternal;
+            $(window).on('resize', function () {
+                clearTimeout(resizeTimerInternal);
+
+                resizeTimerInternal = setTimeout(function () {
+                    togglepin();
+                }, 100);
+            });
+            function togglepin() {
+                if ($(window).width() < 481) {
+                    
+                } else {
+                    gsap.to('.his_box-01', {
+                        scrollTrigger: {
+                            trigger: '.scroll-pin',
+                            pin: true,
+                            start: 'top 100px',
+                            end: (st) => `${st.animation.targets()[0].getBoundingClientRect().height}px-=0% 100px`,
+                            scrub: true,
+                        },
+                    });
+
+                    gsap.to('.his_box-02', {
+                        scrollTrigger: {
+                            trigger: '.scroll-pin2',
+                            pin: true,
+                            start: 'top 100px',
+                            end: (st) => `${st.animation.targets()[0].getBoundingClientRect().height}px-=100% top`,
+                            scrub: true,
+                        },
+                    });
+                }
+            }
+            togglepin();
+        });
+    </script>
 </html>
