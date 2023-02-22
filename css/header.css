@@ -14,7 +14,7 @@
 
 #new_hd.nav_active {
     height: 315px;
-    background-color: #fff;
+    background-color: #0d0d0d;
     -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
 }
@@ -22,7 +22,7 @@
 #new_hd.scroll_active {
     position: fixed;
     top: 0;
-    background-color: #fff;
+    background-color: #0d0d0d;
 }
 
 #new_hd .hd_area {
@@ -72,7 +72,7 @@
 
 #new_hd.nav_active .hd_container::after,
 #new_hd.scroll_active .hd_container::after {
-    background-color: #efefef;
+    background-color: #373737;
 }
 
 @media all and (max-width: 1441px) {
@@ -206,7 +206,7 @@
 
 #new_hd.nav_active .nav_menu_box .menu_item > a,
 #new_hd.scroll_active .nav_menu_box .menu_item > a {
-    color: #000;
+    color: #fff;
 }
 
 #new_hd .nav_menu_box .menu_item:hover > a {
@@ -323,7 +323,7 @@
 
 #new_hd.nav_active .lang_nav .lang_nav_box .lang_item > a,
 #new_hd.scroll_active .lang_nav .lang_nav_box .lang_item > a {
-    color: #000;
+    color: #fff;
 }
 
 #new_hd .lang_nav .lang_nav_box .lang_item > a::after {
@@ -342,7 +342,7 @@
 
 #new_hd.nav_active .lang_nav .lang_nav_box .lang_item > a::after,
 #new_hd.scroll_active .lang_nav .lang_nav_box .lang_item > a::after {
-    background-color: #000;
+    background-color: #fff;
 }
 
 #new_hd .lang_nav .lang_nav_box .lang_item > a:hover::after,
